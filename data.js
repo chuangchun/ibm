@@ -101,7 +101,7 @@ filter(field, operator, value, start, end, sortOrder) {
         return {};
     }
 
-    const isString = false;
+    let isString = false;
     if ( typeof original[0][field] === 'number' )
     {
         if (!supportedNumberOperator.has(operator)) 
